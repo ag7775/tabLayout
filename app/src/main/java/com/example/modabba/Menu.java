@@ -13,8 +13,6 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-import java.util.List;
-
 public class Menu extends Fragment {
 
     private TabLayout tabLayout;
@@ -31,7 +29,7 @@ public class Menu extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_signup,container,false);
+        return inflater.inflate(R.layout.activity_subscription,container,false);
     }
 
     @Override

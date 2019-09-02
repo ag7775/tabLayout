@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,16 +15,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LunchFragment extends Fragment {
+public class ComboFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private Context context;
     private List<Modal> data;
 
-    public LunchFragment(Context context) {
+    public ComboFragment(Context context) {
         this.context = context;
     }
-    public LunchFragment() {
+    public ComboFragment() {
     }
 
     @Nullable
@@ -45,12 +44,11 @@ public class LunchFragment extends Fragment {
 
 
 
-       recyclerView  = view.findViewById(R.id.recyclerView);
-       recyclerView.setHasFixedSize(true);
-       recyclerView.setLayoutManager(new LinearLayoutManager(context));
-       RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(context,data);
-       recyclerView.setAdapter(recyclerViewAdapter);
-
+        recyclerView  = view.findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(context,data);
+        recyclerView.setAdapter(recyclerViewAdapter);
 
     }
 }
